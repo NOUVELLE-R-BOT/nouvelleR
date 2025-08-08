@@ -2,20 +2,19 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Ma Mini-App</title>
+  <title>Mini App</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <h1>Bienvenue 🎉</h1>
-  <p>Ceci est ma première mini-app Telegram.</p>
-  <button onclick="envoyer()">Envoyer un message au bot</button>
+  <h1>Bienvenue dans ma mini-app</h1>
+  <button onclick="sendData()">Envoyer au bot</button>
 
   <script>
     let tg = window.Telegram.WebApp;
     tg.expand();
 
-    function envoyer() {
-      tg.sendData("Salut depuis ma mini-app !");
+    function sendData() {
+      tg.sendData("Hello depuis la mini-app !");
     }
   </script>
 </body>
