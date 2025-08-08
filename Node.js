@@ -10,8 +10,9 @@ bot.onText(/\/start/, (msg) => {
   bot.sendMessage(chatId, "Clique pour ouvrir la mini-app :", {
     reply_markup: {
       inline_keyboard: [[
-        { text: "🚀 Ouvrir la mini-app", web_app: { url: "https://nouvelle-r-bot.github.io/nouvelleR/" } }
+        { text: "🚀 Ouvrir la mini-app", web_app: { url: "https://monapp.vercel.app" } }
       ]]
     }
   });
 });
+
