@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini App Telegram</title>
-    <link rel="stylesheet" href="style.css"> <!-- On liera notre CSS ici -->
+  <meta charset="UTF-8">
+  <title>Ma Mini-App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur ma Mini App Telegram</h1>
-        <p>Découvrez notre bot Telegram et comment l'utiliser.</p>
-    </header>
+  <h1>Bienvenue 🎉</h1>
+  <p>Ceci est ma première mini-app Telegram.</p>
+  <button onclick="envoyer()">Envoyer un message au bot</button>
 
-    <main>
-        <section>
-            <h2>Commencez à utiliser le bot</h2>
-            <a href="https://t.me/ton_bot" target="_blank">
-                <button>Démarrer le bot</button>
-            </a>
-        </section>
-        <section>
-            <h2>À propos du bot</h2>
-            <p>Notre bot peut faire des choses géniales comme [explique ici ce que fait ton bot].</p>
-        </section>
-    </main>
+  <script>
+    let tg = window.Telegram.WebApp;
+    tg.expand();
 
-    <footer>
-        <p>&copy; 2025 Mini App Telegram</p>
-    </footer>
+    function envoyer() {
+      tg.sendData("Salut depuis ma mini-app !");
+    }
+  </script>
 </body>
 </html>
